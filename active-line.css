@@ -1,0 +1,4 @@
+/* Active line background */
+.markdown-source-view.mod-cm6 .cm-line.cm-active{
+	background-color: rgba(var(--mono-rgb-100), 0.05)
+}

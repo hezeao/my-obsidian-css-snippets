@@ -1,0 +1,29 @@
+.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper {
+	width: 100%;
+}
+
+table {
+	min-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table {
+	border-top: 3px solid;
+	border-bottom: 3px solid;
+}
+
+thead {
+	border-bottom: 1.5px solid;
+}
+
+.markdown-rendered tr, .markdown-rendered th, .markdown-rendered td {
+	border: none;
+}
+
+.media-embed img {
+	max-height: 400px;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+}

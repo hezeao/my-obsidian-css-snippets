@@ -1,0 +1,54 @@
+@font-face {
+	font-family: SymbolSimSun;
+	unicode-range: U+2018, U+2019, U+201C, U+201D; /* 单双引号 */
+	src: local("SimSun");
+}
+
+@font-face {
+	font-family: ItalicKaiTi;
+	font-style: italic;
+	src: local("KaiTi");
+}
+
+@font-face {
+	font-family: SymbolKaiTi;
+	unicode-range: U+2018, U+2019, U+201C, U+201D;
+	font-style: italic;
+	src: local("KaiTi");
+}
+
+@font-face {
+	font-family: SimHei;
+	src: local("SimHei");
+}
+
+@font-face {
+	font-family: SymbolSimHei;
+	unicode-range: U+2018, U+2019, U+201C, U+201D; /* 单双引号 */
+	src: local("SimHei");
+}
+
+body {
+	--font-text: SymbolSimSun, var(--font-text-override), var(--font-text-theme), var(--font-default);
+	--font-print: SymbolSimSun, var(--font-text-override), var(--font-text-theme), var(--font-default);
+}
+
+.cm-em {
+	font-family: SymbolKaiTi, "Times New Roman", ItalicKaiTi, serif;
+	font-style: italic;
+	color: var(--italic-color);
+	font-weight: var(--italic-weight);
+}
+
+em {
+	font-family: SymbolKaiTi, "Times New Roman", ItalicKaiTi, serif;
+	font-style: italic;
+}
+
+.HyperMD-header-1, .HyperMD-header-2, .HyperMD-header-3 {
+	font-family: SymbolSimHei, "Times New Roman", SimHei, serif;
+}
+
+h1, h2, h3, .markdown-rendered h1, .markdown-rendered h2, .markdown-rendered h3 {
+	font-family: SymbolSimHei, "Times New Roman", SimHei, serif;
+}

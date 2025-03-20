@@ -1,0 +1,17 @@
+/* system */
+:not(pre)>code[class*="language-system"],
+pre[class*="language-system"] {
+    --code-background: rgba(46, 168, 229, 0.5);
+}
+
+/* assistant */
+:not(pre)>code[class*="language-assistant"],
+pre[class*="language-assistant"] {
+    --code-background: rgba(95, 178, 54, 0.5);
+}
+
+/* user */
+:not(pre)>code[class*="language-user"],
+pre[class*="language-user"] {
+    --code-background: rgba(255, 102, 102, 0.5);
+}

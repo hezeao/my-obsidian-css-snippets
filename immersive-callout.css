@@ -1,0 +1,69 @@
+.callout {
+	/* --callout-border-width: 2px; */
+	--callout-border-opacity: 0.25;
+	--callout-title-opacity: 0.25;
+	--callout-padding: 0;
+	--callout-title-padding: var(--size-4-1) var(--size-4-3) var(--size-4-1) var(--size-4-3);
+	--callout-content-padding: 0 var(--size-4-3) var(--size-4-3) var(--size-4-3);
+	--callout-title-color: var(--callout-color);
+	/* --callout-title-color: var(--caret-color); */
+
+	/* callout-border */
+	box-shadow: inset 0 0 0 2px rgba(var(--callout-color), var(--callout-border-opacity)); 
+
+	/* user-color */
+	--callout-text-accent: hsl(from rgb(var(--callout-color)) calc(h - 3) calc(s * 1.02) calc(l * 1.15));
+	--callout-text-accent-hover: hsl(from rgb(var(--callout-color)) calc(h - 5) calc(s * 1.05) calc(l * 1.29));
+	--callout-text-faint: hsl(from rgb(var(--callout-color)) h s l);
+	--callout-text-muted: hsl(from rgb(var(--callout-color)) calc(h - 3) calc(s * 1.02) calc(l * 1.15));
+	--callout-interactive-accent: hsl(from rgb(var(--callout-color)) h s l);
+	--callout-interactive-accent-hover: hsl(from rgb(var(--callout-color)) calc(h - 3) calc(s * 1.02) calc(l * 1.15));
+
+	/* blockquote */
+	--blockquote-border-color: var(--callout-interactive-accent);
+
+	/* checkbox */
+	--checkbox-color: var(--callout-interactive-accent);
+	--checkbox-color-hover: var(--callout-interactive-accent-hover);
+	--checkbox-border-color: var(--callout-text-faint);
+	--checkbox-border-color-hover: var(--callout-text-muted);
+
+	/* code */
+	--code-background: rgba(var(--callout-color), 0.1);
+
+	/* hr */
+	--hr-color: rgba(var(--callout-color), var(--callout-border-opacity));
+
+	/* indentation-guide */
+	--indentation-guide-color: rgba(var(--callout-color), 0.12);
+	--indentation-guide-color-active: rgba(var(--callout-color), 0.3);
+
+	/* link */
+	--link-color: var(--callout-text-accent);
+	--link-color-hover: var(--callout-text-accent-hover);
+	--link-external-color: var(--callout-text-accent);
+	--link-external-color-hover: var(--callout-text-accent-hover);
+	--link-unresolved-color: var(--callout-text-accent);
+	--link-unresolved-decoration-color: hsl(from var(--callout-interactive-accent) h s l / 0.3);
+
+	/* list-marker */
+	--list-marker-color: var(--callout-text-faint);
+	--list-marker-color-hover: var(--callout-text-faint);
+	--list-marker-color-collapsed: var(--callout-text-accent);
+
+	/* tag */
+	--tag-color: var(--callout-text-accent);
+	--tag-color-hover: var(--callout-text-accent);
+	--tag-background: hsl(from var(--callout-interactive-accent) h s l / 0.1);
+	--tag-background-hover: hsl(from var(--callout-interactive-accent) h s l / 0.2);
+	--tag-border-color: hsl(from var(--callout-interactive-accent) h s l / 0.15);
+	--tag-border-color-hover: hsl(from var(--callout-interactive-accent) h s l / 0.15);
+}
+
+.callout-title {
+	background-color: rgba(var(--callout-color), var(--callout-title-opacity));
+}
+
+.callout-icon .svg-icon {
+	color: var(--callout-title-color);
+}
